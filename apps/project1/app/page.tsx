@@ -21,6 +21,8 @@ async function HomeAsync() {
     return <StoryblokStory story={story} />;
   } catch (err) {
     console.error("Fehler beim Laden der Story:", err);
+    console.log("storyblokApi", storyblokApi);
+
     return <div>Fehler beim Laden der Story</div>;
   }
 }
