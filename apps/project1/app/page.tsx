@@ -7,5 +7,9 @@ export default async function Home() {
 
   const story = data.stories[1];
 
+  if (!story) {
+    return <div>Keine Story vorhanden</div>;
+  }
+
   return <StoryblokStory story={story} />;
 }
