@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Atoms",
+    "id": 64255824113652,
+    "uuid": "511794f2-bf8d-4cc9-a8b6-9ceff7723467",
+    "parent_id": null,
+    "parent_uuid": null
+  },
+  {
+    "name": "Molecules",
+    "id": 64255853182965,
+    "uuid": "703f1103-12a9-45f3-947c-c8ef76e5624b",
+    "parent_id": null,
+    "parent_uuid": null
+  },
+  {
+    "name": "Organisms",
+    "id": 64255878529014,
+    "uuid": "f918ed1d-c4b7-4904-9a81-bc8c5410925d",
+    "parent_id": null,
+    "parent_uuid": null
+  }
+]

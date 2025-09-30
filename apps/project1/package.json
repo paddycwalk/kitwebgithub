@@ -1,0 +1,32 @@
+{
+  "name": "project1",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack --port 3001",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint --max-warnings 0",
+    "check-types": "tsc --noEmit",
+    "proxy": "mkcert -install && mkcert localhost && local-ssl-proxy --source 3010 --target 3001 --cert localhost.pem --key localhost-key.pem",
+    "pull-and-generate-sb-types": "storyblok components pull --space 342135 && storyblok types generate --space 342135"
+  },
+  "dependencies": {
+    "@repo/ui": "*",
+    "@storyblok/react": "^5.0.0",
+    "next": "^15.3.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "storyblok-rich-text-react-renderer": "^3.0.1"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "*",
+    "@repo/typescript-config": "*",
+    "@types/node": "^22.15.3",
+    "@types/react": "19.1.0",
+    "@types/react-dom": "19.1.1",
+    "eslint": "^9.28.0",
+    "typescript": "5.8.2"
+  }
+}

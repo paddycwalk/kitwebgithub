@@ -1,0 +1,17 @@
+:root {
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  // Button
+  --button-background-color: #d0161c;
+  --button-color: var(--color-white);
+  --button-border-radius: 0;
+  --button-border: none;
+  --button-padding: 8px 20px;
+
+  // Headline
+  --headline-color: var(--color-black);
+
+  // Link
+  --link-color: var(--color-black);
+}

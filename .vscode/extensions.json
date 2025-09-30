@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "editorconfig.editorconfig",
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "usernamehw.errorlens",
+    "syler.sass-indented",
+    "SonarSource.sonarlint-vscode",
+    "stylelint.vscode-stylelint"
+  ],
+  "unwantedRecommendations": []
+}

@@ -1,0 +1,30 @@
+{
+  "name": "kitweb",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "check-types": "turbo run check-types",
+    "proxy": "mkcert -install && mkcert localhost && local-ssl-proxy --source 3010 --target 3000 --cert localhost.pem --key localhost-key.pem"
+  },
+  "devDependencies": {
+    "clsx": "2.1.1",
+    "cross-env": "^10.0.0",
+    "prettier": "^3.6.2",
+    "react-inlinesvg": "^4.2.0",
+    "sass": "^1.93.0",
+    "sonarqube-scanner": "^4.3.0",
+    "turbo": "^2.5.6",
+    "typescript": "5.8.3"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "packageManager": "npm@10.9.2",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}

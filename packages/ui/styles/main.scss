@@ -1,0 +1,52 @@
+@use "variables";
+
+// Font sizes raw
+.-size-s {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.-size-sm {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.-size-m {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.-size-l {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.-size-xl {
+  font-size: 24px;
+  line-height: 34px;
+}
+
+.-size-2xl {
+  font-size: 32px;
+  line-height: 43px;
+}
+
+.-size-3xl {
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.-size-4xl {
+  font-size: 48px;
+  line-height: 60px;
+}
+
+.-size-5xl {
+  font-size: 64px;
+  line-height: 77px;
+}
+
+.-size-6xl {
+  font-size: 80px;
+  line-height: 92px;
+}
