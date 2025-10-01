@@ -31,11 +31,7 @@ export const Icon = ({
 }: IconProps) => {
   return (
     <SVG
-      className={clsx({
-        [`${className}`]: className,
-        [styles["Icon"]]: true,
-        [styles[`Icon-${size}`]]: size,
-      })}
+      className={clsx(className, styles.Icon, size && styles[`Icon-${size}`])}
       src={src}
       width={width}
       height={height}
