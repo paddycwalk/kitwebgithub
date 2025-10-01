@@ -62,9 +62,13 @@ export const CustomLink = ({
       download={download}
       prefetch={!href.toLowerCase().startsWith("http")}
     >
-      {iconLeft && <Icon src={`path/to/${iconLeft}`} />}
+      {iconLeft && (
+        <Icon src={iconLeft} className={styles.IconLeft} width={20} />
+      )}
       {label}
-      {iconRight && <Icon src={`path/to/${iconRight}`} />}
+      {iconRight && (
+        <Icon src={iconRight} className={styles.IconRight} width={20} />
+      )}
       {children}
     </Link>
   );

@@ -1,4 +1,5 @@
 import { Button as ButtonTypes } from "../../../../../apps/project1/.storyblok/types/342135/storyblok-components";
+import { iconMap } from "../../../icons";
 import { Button } from "./Button";
 
 export const CMSButton = ({ blok }: { blok: ButtonTypes }) => {
@@ -11,8 +12,8 @@ export const CMSButton = ({ blok }: { blok: ButtonTypes }) => {
       type={type === "" ? undefined : type}
       disabled={disabled}
       ariaLabel={ariaLabel}
-      iconLeft={iconLeft}
-      iconRight={iconRight}
+      iconLeft={iconLeft ? iconMap[iconLeft] : undefined}
+      iconRight={iconRight ? iconMap[iconRight] : undefined}
       blok={blok}
     >
       {label}

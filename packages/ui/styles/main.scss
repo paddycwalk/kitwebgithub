@@ -1,5 +1,9 @@
 @use "variables";
 
+.-bold {
+  font-weight: 700 !important;
+}
+
 // Font sizes raw
 .-size-s {
   font-size: 12px;

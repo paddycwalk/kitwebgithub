@@ -1,8 +1,8 @@
-import styles from "./Icon.module.scss";
 import clsx from "clsx";
-import ReactInlinesvg from "react-inlinesvg";
+import SVG from "react-inlinesvg";
+import styles from "./Icon.module.scss";
 
-interface IconProps {
+export interface IconProps {
   src: string;
   title?: string;
   width?: number;
@@ -30,8 +30,12 @@ export const Icon = ({
   style,
 }: IconProps) => {
   return (
-    <ReactInlinesvg
-      className={clsx(size && styles.Icon, styles[`Icon-${size}`], className)}
+    <SVG
+      className={clsx({
+        [`${className}`]: className,
+        [styles["Icon"]]: true,
+        [styles[`Icon-${size}`]]: size,
+      })}
       src={src}
       width={width}
       height={height}

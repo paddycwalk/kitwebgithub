@@ -1,3 +1,4 @@
+import { iconMap } from "../../../icons";
 import { CustomLink } from "./Link";
 
 export const CMSLink = ({ blok }: any) => {
@@ -11,8 +12,8 @@ export const CMSLink = ({ blok }: any) => {
       target={target}
       btn={btn}
       colored={colored}
-      iconLeft={iconLeft}
-      iconRight={iconRight}
+      iconLeft={iconLeft ? iconMap[iconLeft] : undefined}
+      iconRight={iconRight ? iconMap[iconRight] : undefined}
     >
       {children}
     </CustomLink>

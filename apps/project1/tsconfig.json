@@ -13,9 +13,8 @@
     "next-env.d.ts",
     "next.config.js",
     ".next/types/**/*.ts",
-    "declaration.d.ts"
+    "declaration.d.ts",
+    "../../packages/ui/icons.ts"
   ],
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": ["node_modules"]
 }
